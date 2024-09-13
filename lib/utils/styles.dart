@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:weather_app/constants.dart';
+
+abstract class Styles {
+  static const TextStyle textStyleRegular34 = TextStyle(
+    fontSize: 34,
+    color: kPrimaryColor,
+  );
+  static const TextStyle textStyleThin96 = TextStyle(
+    fontSize: 96,
+    fontWeight: FontWeight.w100,
+  );
+}
