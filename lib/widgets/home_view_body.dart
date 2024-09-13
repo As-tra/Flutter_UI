@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:weather_app/utils/assets.dart';
+import 'package:weather_app/widgets/bottom_sheet.dart';
 import 'package:weather_app/widgets/main_weather_info.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -8,22 +8,22 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(Assets.imagesBg),
+    return Stack(
+      children: [
+        Positioned.fill(child: Image.asset(Assets.imagesBg)),
+        SafeArea(
+          child: Column(
+            children: [
+              const MainWeatherInfo(),
+              const SizedBox(height: 20),
+              Image.asset(
+                Assets.imagesHouse,
+              ),
+            ],
+          ),
         ),
-      ),
-      child: SafeArea(
-        child: Column(
-          children: [
-            const MainWeatherInfo(),
-            Image.asset(
-              Assets.imagesHouse,
-            ),
-          ],
-        ),
-      ),
+        const CustomBottomSheet(),
+      ],
     );
   }
 }
