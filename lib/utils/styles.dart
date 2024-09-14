@@ -17,4 +17,10 @@ abstract class Styles {
     fontWeight: FontWeight.w500,
     color: kPrimaryColor,
   );
+
+  static const TextStyle textStyleSemiBold15 = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w600,
+    color: kPrimaryColor,
+  );
 }

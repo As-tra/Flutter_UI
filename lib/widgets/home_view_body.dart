@@ -10,7 +10,12 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Positioned.fill(child: Image.asset(Assets.imagesBg)),
+        Positioned.fill(
+          child: Image.asset(
+            Assets.imagesBg,
+            fit: BoxFit.cover,
+          ),
+        ),
         SafeArea(
           child: Column(
             children: [
