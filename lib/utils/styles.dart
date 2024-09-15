@@ -23,4 +23,9 @@ abstract class Styles {
     fontWeight: FontWeight.w600,
     color: kPrimaryColor,
   );
+    static const TextStyle textStyleMedium18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    color: kPrimaryColor,
+  );
 }

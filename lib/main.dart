@@ -4,7 +4,12 @@ import 'package:weather_app/views/home_view.dart';
 
 void main() {
   runApp(
-    const MyApp(),
+    DevicePreview(
+      enabled: true,
+      builder: (context) {
+        return const MyApp();
+      }
+    ),
   );
 }
 class MyApp extends StatelessWidget {
@@ -14,8 +19,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // builder: DevicePreview.appBuilder,
-      // locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
+      locale: DevicePreview.locale(context),
       debugShowCheckedModeBanner: false,
       home: const HomeView(),
     );

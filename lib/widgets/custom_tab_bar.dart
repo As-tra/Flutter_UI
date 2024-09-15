@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/constants.dart';
 import 'package:weather_app/utils/styles.dart';
+import 'package:weather_app/widgets/weather_state_list.dart';
 
 class CustomTabBar extends StatelessWidget {
   const CustomTabBar({super.key});
@@ -16,13 +17,12 @@ class CustomTabBar extends StatelessWidget {
           TabBar(
             tabAlignment: TabAlignment.fill,
             dividerColor: const Color(0xff4C3657),
-            // indicatorPadding: const EdgeInsets.symmetric(horizontal: 10),
             indicator: _buildIndicator(),
             tabs: tabTitles
                 .map(
                   (e) => Tab(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text(
                         e,
                         style: Styles.textStyleSemiBold15.copyWith(
@@ -34,11 +34,13 @@ class CustomTabBar extends StatelessWidget {
                 )
                 .toList(),
           ),
-          const Expanded(
+          const SizedBox(height: 20),
+          const SizedBox(
+            height: 150,
             child: TabBarView(
               children: [
-                SizedBox(),
-                SizedBox(),
+                WeatherStateList(),
+                WeatherStateList(),
               ],
             ),
           ),
