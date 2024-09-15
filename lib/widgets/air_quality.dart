@@ -22,7 +22,7 @@ class AirQuality extends StatelessWidget {
               const SizedBox(width: 4),
               Text(
                 "AIR QUALITY",
-                style: Styles.textStyleSemiBold15.copyWith(
+                style: Styles.textStyleSemiBold14.copyWith(
                   color: kGrey2,
                 ),
               ),
@@ -34,7 +34,11 @@ class AirQuality extends StatelessWidget {
             style: Styles.textStyleMedium18,
           ),
           const Padding(
-            padding: EdgeInsets.only(right: 5.0),
+            padding: EdgeInsets.only(
+              right: 5.0,
+              top: 20,
+              bottom: 20,
+            ),
             child: CustomSlider(),
           ),
           Row(
@@ -42,7 +46,7 @@ class AirQuality extends StatelessWidget {
             children: [
               Text(
                 'See More',
-                style: Styles.textStyleSemiBold15.copyWith(
+                style: Styles.textStyleSemiBold14.copyWith(
                   fontWeight: FontWeight.normal,
                 ),
               ),

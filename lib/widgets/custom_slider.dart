@@ -15,7 +15,7 @@ class _CustomSliderState extends State<CustomSlider> {
   Widget build(BuildContext context) {
     return Container(
       height: 4,
-      margin: const EdgeInsets.symmetric(vertical: 20),
+      // margin: const EdgeInsets.symmetric(vertical: 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         gradient: const LinearGradient(

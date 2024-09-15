@@ -18,6 +18,10 @@ class Assets {
   /// assets/icons/SunCloudMidRain.png
   static const String iconsSunCloudMidRain = "assets/icons/SunCloudMidRain.png";
 
+  /// Assets for iconsSunrise
+  /// assets/icons/sunrise.svg
+  static const String iconsSunrise = "assets/icons/sunrise.svg";
+
   /// Assets for iconsTornado
   /// assets/icons/Tornado.png
   static const String iconsTornado = "assets/icons/Tornado.png";
@@ -41,5 +45,9 @@ class Assets {
   /// Assets for imagesNewBottomSheetBg
   /// assets/images/newBottomSheetBg.png
   static const String imagesNewBottomSheetBg = "assets/images/newBottomSheetBg.png";
+
+  /// Assets for imagesSunrise
+  /// assets/images/sunrise.png
+  static const String imagesSunrise = "assets/images/sunrise.png";
 }
 

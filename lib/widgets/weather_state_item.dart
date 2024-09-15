@@ -32,7 +32,7 @@ class WeatherStateItem extends StatelessWidget {
         children: [
           const Text(
             "12 AM",
-            style: Styles.textStyleSemiBold15,
+            style: Styles.textStyleSemiBold14,
           ),
           const SizedBox(height: 16),
           Image.asset(Assets.iconsMoonCloudFastWind),

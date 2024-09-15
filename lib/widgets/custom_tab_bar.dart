@@ -25,7 +25,7 @@ class CustomTabBar extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: Text(
                         e,
-                        style: Styles.textStyleSemiBold15.copyWith(
+                        style: Styles.textStyleSemiBold14.copyWith(
                           color: kGrey1,
                         ),
                       ),
