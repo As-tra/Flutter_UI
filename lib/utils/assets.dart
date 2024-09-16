@@ -34,6 +34,10 @@ class Assets {
   /// assets/images/bottomSheetBg.png
   static const String imagesBottomSheetBg = "assets/images/bottomSheetBg.png";
 
+  /// Assets for imagesCompass
+  /// assets/images/compass.png
+  static const String imagesCompass = "assets/images/compass.png";
+
   /// Assets for imagesHouse
   /// assets/images/House.png
   static const String imagesHouse = "assets/images/House.png";

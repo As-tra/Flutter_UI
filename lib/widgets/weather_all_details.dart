@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/widgets/air_quality.dart';
+import 'package:weather_app/widgets/custom_wind.dart';
 import 'package:weather_app/widgets/moderate.dart';
 import 'package:weather_app/widgets/sun_rise.dart';
 
@@ -22,7 +23,41 @@ class WeatherAllDetails extends StatelessWidget {
         children: [
           AirQuality(),
           SizedBox(height: 10),
-          IntrinsicHeight(
+          SizedBox(
+            height: 210,
+            child: Row(
+              children: [
+                Expanded(child: Moderate()),
+                SizedBox(width: 14),
+                Expanded(child: SunRise()),
+              ],
+            ),
+          ),
+          SizedBox(height: 10),
+          SizedBox(
+            height: 210,
+            child: Row(
+              children: [
+                Expanded(child: Customwind()),
+                SizedBox(width: 14),
+                Expanded(child: SunRise()),
+              ],
+            ),
+          ),
+          SizedBox(height: 10),
+          SizedBox(
+            height: 210,
+            child: Row(
+              children: [
+                Expanded(child: Moderate()),
+                SizedBox(width: 14),
+                Expanded(child: SunRise()),
+              ],
+            ),
+          ),
+          SizedBox(height: 10),
+          SizedBox(
+            height: 210,
             child: Row(
               children: [
                 Expanded(child: Moderate()),
