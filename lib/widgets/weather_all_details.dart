@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather_app/widgets/air_quality.dart';
 import 'package:weather_app/widgets/custom_wind.dart';
 import 'package:weather_app/widgets/moderate.dart';
+import 'package:weather_app/widgets/rain_fall.dart';
 import 'package:weather_app/widgets/sun_rise.dart';
 
 class WeatherAllDetails extends StatelessWidget {
@@ -40,7 +41,7 @@ class WeatherAllDetails extends StatelessWidget {
               children: [
                 Expanded(child: Customwind()),
                 SizedBox(width: 14),
-                Expanded(child: SunRise()),
+                Expanded(child: RainFall()),
               ],
             ),
           ),
