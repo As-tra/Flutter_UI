@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/widgets/air_quality.dart';
 import 'package:weather_app/widgets/custom_wind.dart';
+import 'package:weather_app/widgets/feel_like.dart';
+import 'package:weather_app/widgets/humidity.dart';
 import 'package:weather_app/widgets/moderate.dart';
+import 'package:weather_app/widgets/pressure.dart';
 import 'package:weather_app/widgets/rain_fall.dart';
 import 'package:weather_app/widgets/sun_rise.dart';
+import 'package:weather_app/widgets/visibility_widget.dart';
 
 class WeatherAllDetails extends StatelessWidget {
   const WeatherAllDetails({super.key});
@@ -50,9 +54,9 @@ class WeatherAllDetails extends StatelessWidget {
             height: 210,
             child: Row(
               children: [
-                Expanded(child: Moderate()),
+                Expanded(child: FeelLike()),
                 SizedBox(width: 14),
-                Expanded(child: SunRise()),
+                Expanded(child: Humidity()),
               ],
             ),
           ),
@@ -61,9 +65,9 @@ class WeatherAllDetails extends StatelessWidget {
             height: 210,
             child: Row(
               children: [
-                Expanded(child: Moderate()),
+                Expanded(child: VisibilityWidget()),
                 SizedBox(width: 14),
-                Expanded(child: SunRise()),
+                Expanded(child: Pressure()),
               ],
             ),
           )
