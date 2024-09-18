@@ -37,7 +37,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
   ///  1.listen if the user is scroll up
   ///  2. automaticaly resize the Draggable Sheet to the max height
   void _handleScroll() {
-    if (diretion == "top" && _controller.size > .45) {
+    if (diretion == "top" && _controller.size > .5) {
       diretion = "unset";
       _controller.animateTo(
         kMaxDraggableSheetSize,
@@ -46,7 +46,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
       );
       BlocProvider.of<ScrollCubit>(context).updateUI();
     }
-    if (diretion == "down" && _controller.size < kMaxDraggableSheetSize) {
+    if (diretion == "down" && _controller.size < .78) {
       diretion = "unset";
       _controller.animateTo(
         kInitialDraggableSheetSize,
@@ -75,6 +75,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
           decoration: _getDecoration(),
           child: ListView(
             controller: scrollController,
+            physics: const BouncingScrollPhysics(),
             padding: const EdgeInsets.symmetric(vertical: 9),
             children: const [
               CursorToDrag(),
