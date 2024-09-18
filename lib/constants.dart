@@ -5,3 +5,6 @@ const Color kPrimaryColor = Color(0xffffffff);
 const Color kSecondary = Color(0xffEBEBF5);
 const Color kGrey1 = Color(0xffEBEBF5);
 const Color kGrey2 = Color(0xff9392A9);
+
+const double kInitialDraggableSheetSize = 0.38;
+const double kMaxDraggableSheetSize = .8;
