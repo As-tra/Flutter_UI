@@ -34,6 +34,10 @@ class Assets {
   /// assets/images/bottomSheetBg.png
   static const String imagesBottomSheetBg = "assets/images/bottomSheetBg.png";
 
+  /// Assets for imagesCenterButton
+  /// assets/images/centerButton.png
+  static const String imagesCenterButton = "assets/images/centerButton.png";
+
   /// Assets for imagesCompass
   /// assets/images/compass.png
   static const String imagesCompass = "assets/images/compass.png";
@@ -41,6 +45,14 @@ class Assets {
   /// Assets for imagesHouse
   /// assets/images/House.png
   static const String imagesHouse = "assets/images/House.png";
+
+  /// Assets for imagesMap
+  /// assets/images/map.png
+  static const String imagesMap = "assets/images/map.png";
+
+  /// Assets for imagesMenu
+  /// assets/images/menu.png
+  static const String imagesMenu = "assets/images/menu.png";
 
   /// Assets for imagesModal
   /// assets/images/Modal.png
@@ -53,5 +65,9 @@ class Assets {
   /// Assets for imagesSunrise
   /// assets/images/sunrise.png
   static const String imagesSunrise = "assets/images/sunrise.png";
+
+  /// Assets for imagesTabBar
+  /// assets/images/TabBar.png
+  static const String imagesTabBar = "assets/images/TabBar.png";
 }
 

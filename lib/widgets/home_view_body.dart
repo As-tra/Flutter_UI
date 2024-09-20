@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/controller/scrollCubit/scroll_cubit.dart';
 import 'package:weather_app/widgets/bottom_sheet.dart';
+import 'package:weather_app/widgets/cusotm_bottom_nav.dart';
 import 'package:weather_app/widgets/regular_home_view.dart';
 import 'package:weather_app/widgets/scrolled_home_view.dart';
+
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
@@ -15,15 +17,16 @@ class HomeViewBody extends StatelessWidget {
           children: [
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 400),
-              child: state
-                  ? const RegularHomeView()
-                  : const ScrolledHomeView(),
+              child: state ? const RegularHomeView() : const ScrolledHomeView(),
             ),
             const CustomBottomSheet(),
+            const Align(
+              alignment: Alignment(1, 1),
+              child: CusotmBottomNav(),
+            ),
           ],
         );
       },
     );
   }
 }
-

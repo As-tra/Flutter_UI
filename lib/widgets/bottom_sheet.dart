@@ -77,12 +77,19 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
             controller: scrollController,
             physics: const BouncingScrollPhysics(),
             padding: const EdgeInsets.symmetric(vertical: 9),
-            children: const [
-              CursorToDrag(),
-              SizedBox(height: 16),
-              CustomTabBar(),
-              SizedBox(height: 25),
-              WeatherAllDetails(),
+            children: [
+              const CursorToDrag(),
+              const SizedBox(height: 16),
+              const CustomTabBar(),
+              const SizedBox(height: 25),
+              BlocBuilder<ScrollCubit, bool>(
+                builder: (context, state) {
+                  return Visibility(
+                    visible: !state,
+                    child: const WeatherAllDetails(),
+                  );
+                },
+              ),
               // weather datails here
             ],
           ),
