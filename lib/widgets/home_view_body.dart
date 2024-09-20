@@ -20,9 +20,14 @@ class HomeViewBody extends StatelessWidget {
               child: state ? const RegularHomeView() : const ScrolledHomeView(),
             ),
             const CustomBottomSheet(),
-            const Align(
-              alignment: Alignment(1, 1),
-              child: CusotmBottomNav(),
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 300),
+              child: !state
+                  ? const SizedBox()
+                  : const Align(
+                      alignment: Alignment(1, 1),
+                      child: CusotmBottomNav(),
+                    ),
             ),
           ],
         );

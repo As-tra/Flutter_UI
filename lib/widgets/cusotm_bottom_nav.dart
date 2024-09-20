@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/utils/assets.dart';
+import 'package:weather_app/views/search_view.dart';
 
 class CusotmBottomNav extends StatelessWidget {
   const CusotmBottomNav({super.key});
@@ -19,7 +20,17 @@ class CusotmBottomNav extends StatelessWidget {
         children: [
           Image.asset(Assets.imagesMap),
           Image.asset(Assets.imagesCenterButton),
-          Image.asset(Assets.imagesMenu),
+          InkWell(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return const SearchView();
+                    },
+                  ),
+                );
+              },
+              child: Image.asset(Assets.imagesMenu)),
         ],
       ),
     );

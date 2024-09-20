@@ -38,6 +38,10 @@ class Assets {
   /// assets/images/centerButton.png
   static const String imagesCenterButton = "assets/images/centerButton.png";
 
+  /// Assets for imagesCircleMenu
+  /// assets/images/circle_menu.png
+  static const String imagesCircleMenu = "assets/images/circle_menu.png";
+
   /// Assets for imagesCompass
   /// assets/images/compass.png
   static const String imagesCompass = "assets/images/compass.png";
