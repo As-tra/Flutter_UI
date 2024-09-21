@@ -14,15 +14,15 @@ class CustomSearchBar extends StatelessWidget {
           // Outer shadow to give the effect of depth
           BoxShadow(
             color: Colors.black.withOpacity(0.4),
-            offset: const Offset(0, 4),
-            blurRadius: 6,
-            spreadRadius: 1,
+            spreadRadius: -10,
+            blurRadius: 2,
+            offset: const Offset(0, 10),
           ),
           // Inner shadow to simulate the hole
           BoxShadow(
             color: Colors.black.withOpacity(0.25),
             offset: const Offset(0, -2),
-            blurRadius: 4,
+            blurRadius: 10,
             spreadRadius: 2,
             blurStyle: BlurStyle.inner,
           ),

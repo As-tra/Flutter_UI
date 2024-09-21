@@ -35,8 +35,10 @@ class CustomTabBar extends StatelessWidget {
                 .toList(),
           ),
           const SizedBox(height: 20),
+          // TO DO :siz el height ya assil 
+          // ma tensech
           const SizedBox(
-            height: 150,
+            height: 160,
             child: TabBarView(
               children: [
                 WeatherStateList(),
