@@ -2,6 +2,26 @@
 class Assets {
   Assets._();
   
+  /// Assets for icons1
+  /// assets/icons/1.png
+  static const String icons1 = "assets/icons/1.png";
+
+  /// Assets for icons2
+  /// assets/icons/2.png
+  static const String icons2 = "assets/icons/2.png";
+
+  /// Assets for icons3
+  /// assets/icons/3.png
+  static const String icons3 = "assets/icons/3.png";
+
+  /// Assets for icons4
+  /// assets/icons/4.png
+  static const String icons4 = "assets/icons/4.png";
+
+  /// Assets for icons5
+  /// assets/icons/5.png
+  static const String icons5 = "assets/icons/5.png";
+
   /// Assets for iconsMoonCloudFastWind
   /// assets/icons/MoonCloudFastWind.png
   static const String iconsMoonCloudFastWind = "assets/icons/MoonCloudFastWind.png";
@@ -65,6 +85,10 @@ class Assets {
   /// Assets for imagesNewBottomSheetBg
   /// assets/images/newBottomSheetBg.png
   static const String imagesNewBottomSheetBg = "assets/images/newBottomSheetBg.png";
+
+  /// Assets for imagesRectangle
+  /// assets/images/Rectangle.png
+  static const String imagesRectangle = "assets/images/Rectangle.png";
 
   /// Assets for imagesSunrise
   /// assets/images/sunrise.png
